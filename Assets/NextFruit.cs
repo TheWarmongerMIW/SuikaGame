@@ -20,7 +20,6 @@ public class NextFruit : MonoBehaviour
         {
             Sprite fruitSprite = spawnFruit.selectedFruit.GetComponent<SpriteRenderer>().sprite;
             image.sprite = fruitSprite;
-            Debug.Log("Has Fruit");
         }
     }
 }

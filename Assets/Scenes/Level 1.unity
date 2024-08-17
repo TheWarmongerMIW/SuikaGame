@@ -265,6 +265,7 @@ GameObject:
   - component: {fileID: 73750088}
   - component: {fileID: 73750090}
   - component: {fileID: 73750091}
+  - component: {fileID: 73750092}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -383,6 +384,18 @@ MonoBehaviour:
   RightKey: 100
   speed: 10
   body: {fileID: 73750090}
+--- !u!114 &73750092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73750087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b9c75bbab6a58a489a361121e756086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &169327670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1704,6 +1717,8 @@ MonoBehaviour:
   - {fileID: 4518127050049936894, guid: 99795e5ac30efe0428ec0679dd03ae6c, type: 3}
   - {fileID: 7127371196072002496, guid: 5a308086bb5fd1245944fd67e73e82de, type: 3}
   - {fileID: 8045322990915084118, guid: 47cb8108e46606b4a872b70f30b22e3e, type: 3}
+  fruitBody: {fileID: 0}
+  fruitCollider: {fileID: 0}
   spawner: {fileID: 1983355311}
   selectedFruit: {fileID: 0}
   isSelected: 0

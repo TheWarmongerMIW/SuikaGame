@@ -23,6 +23,8 @@ public class Controller : MonoBehaviour
     }*/
     void FixedUpdate()
     {
+        //if (transform.position.x >= 10) transform.position = new Vector2(10, transform.position.y);    
+
         if (Input.GetKey(LeftKey)) body.MovePosition(body.position + new Vector2(-1,0) * speed * Time.fixedDeltaTime);
         if (Input.GetKey(RightKey)) body.MovePosition(body.position + new Vector2(1,0) * speed * Time.fixedDeltaTime);
     }
