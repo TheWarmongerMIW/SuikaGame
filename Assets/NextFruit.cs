@@ -16,9 +16,9 @@ public class NextFruit : MonoBehaviour
 
     void Update()
     {
-        if (spawnFruit.isSelected)
+        if (spawnFruit.isNextFruitSelected)
         {
-            Sprite fruitSprite = spawnFruit.selectedFruit.GetComponent<SpriteRenderer>().sprite;
+            Sprite fruitSprite = spawnFruit.nextSelectedFruit.GetComponent<SpriteRenderer>().sprite;
             image.sprite = fruitSprite;
         }
     }

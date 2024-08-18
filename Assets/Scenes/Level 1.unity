@@ -241,7 +241,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.99215686, g: 1, b: 0.28235295, a: 1}
   m_FlipX: 0
@@ -265,7 +265,6 @@ GameObject:
   - component: {fileID: 73750088}
   - component: {fileID: 73750090}
   - component: {fileID: 73750091}
-  - component: {fileID: 73750092}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -334,7 +333,7 @@ Transform:
   m_GameObject: {fileID: 73750087}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.8351965, y: 8.9, z: 0.19681755}
+  m_LocalPosition: {x: -0.12, y: 8.9, z: 0.19681755}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -384,18 +383,6 @@ MonoBehaviour:
   RightKey: 100
   speed: 10
   body: {fileID: 73750090}
---- !u!114 &73750092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 73750087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b9c75bbab6a58a489a361121e756086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &169327670
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,7 +686,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.4517, y: 1.2239, z: 0.10344426}
-  m_LocalScale: {x: 16.885883, y: 15.350932, z: 1}
+  m_LocalScale: {x: 16.88566, y: 15.350932, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1489069849}
@@ -1487,7 +1474,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.9892113, g: 1, b: 0.28235295, a: 1}
   m_FlipX: 0
@@ -1652,7 +1639,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.99215686, g: 1, b: 0.28235295, a: 1}
   m_FlipX: 0
@@ -1721,7 +1708,10 @@ MonoBehaviour:
   fruitCollider: {fileID: 0}
   spawner: {fileID: 1983355311}
   selectedFruit: {fileID: 0}
+  nextSelectedFruit: {fileID: 0}
   isSelected: 0
+  hasTakenNextFruit: 0
+  isNextFruitSelected: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
