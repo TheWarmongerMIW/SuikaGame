@@ -57,8 +57,6 @@ public class SpawnFruit : MonoBehaviour
     }
     public void FruitSpawner()
     {
-        //int randomNumber = Random.Range(1, fruits.Count + 1);
-        //selectedFruit = fruits[randomNumber - 1];
         selectedFruit = nextSelectedFruit;
 
         if (isDone)
