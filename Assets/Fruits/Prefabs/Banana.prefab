@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6671723579786153559}
   - component: {fileID: 7471659136739417891}
   - component: {fileID: 1229938281827649754}
-  - component: {fileID: 3313717777032211673}
+  - component: {fileID: 624895273469864744}
   - component: {fileID: 8365512083235862955}
   m_Layer: 0
   m_Name: Banana
@@ -114,8 +114,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &3313717777032211673
-CircleCollider2D:
+--- !u!60 &624895273469864744
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -146,9 +146,46 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.068418026, y: -0.20525575}
-  serializedVersion: 2
-  m_Radius: 3.490719
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.242424, y: 6.5151515}
+    newSize: {x: 7.9666667, y: 7.1666665}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2.806304, y: 1.7330804}
+      - {x: 2.2356358, y: 2.0378575}
+      - {x: 1.1523457, y: 2.1610878}
+      - {x: 0.5556278, y: 2.7854307}
+      - {x: -0.23264122, y: 3.2504547}
+      - {x: -1.0706148, y: 3.309638}
+      - {x: -1.4743689, y: 2.80203}
+      - {x: -1.3411865, y: 1.8457139}
+      - {x: -1.7334808, y: 0.9688324}
+      - {x: -2.1547737, y: 0.9072351}
+      - {x: -2.4612217, y: 0.7926089}
+      - {x: -3.425978, y: 0.716593}
+      - {x: -3.6081965, y: -0.49959987}
+      - {x: -2.8414536, y: -1.3527545}
+      - {x: -2.529303, y: -2.443466}
+      - {x: -2.18005, y: -2.8608835}
+      - {x: -1.5862372, y: -3.1144042}
+      - {x: -1.0134583, y: -3.268556}
+      - {x: -0.32351685, y: -3.287212}
+      - {x: 0.44324684, y: -3.1103706}
+      - {x: 1.0355778, y: -3.2728603}
+      - {x: 1.640728, y: -3.2676945}
+      - {x: 2.0017354, y: -3.12742}
+      - {x: 2.798811, y: -2.8034763}
+      - {x: 3.326725, y: -2.213657}
+      - {x: 3.6212122, y: -1.6460431}
+      - {x: 3.4910567, y: 0.4351221}
+  m_UseDelaunayMesh: 0
 --- !u!114 &8365512083235862955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,3 +199,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextFruit: {fileID: 8459921401697688855, guid: 9e7223125347d8b40a5f904a1e62a4d6, type: 3}
+  score: {fileID: 0}

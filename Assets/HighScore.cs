@@ -5,9 +5,7 @@ using UnityEngine;
 using Unity.VisualScripting;
 
 public class HighScore : MonoBehaviour
-{
-    [SerializeField] private UnityEvent<HighScore> UpdateHighScore;
-   
+{   
     public TextMeshProUGUI highScore;
     public Score score;
     public ScoreCount scoreCount;
@@ -21,6 +19,7 @@ public class HighScore : MonoBehaviour
     void Update()
     {
         AddHighScore();
+        if (Input.GetKey(KeyCode.R)) ResetHighScore();    
     }
 
     public void AddHighScore()
@@ -30,5 +29,10 @@ public class HighScore : MonoBehaviour
             PlayerPrefs.SetInt("HighScore", score.ScoreToAdd);
             highScore.text = score.ScoreToAdd.ToString();   
         }
+    }
+
+    public void ResetHighScore()
+    {
+        PlayerPrefs.DeleteKey("HighScore");
     }
 }

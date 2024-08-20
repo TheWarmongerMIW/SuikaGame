@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7847758844338117388}
   - component: {fileID: 3248594424672351986}
   - component: {fileID: 8616188999631492027}
-  - component: {fileID: 2855364385489385383}
+  - component: {fileID: 7879495697436965325}
   - component: {fileID: 6649293404433624359}
   m_Layer: 0
   m_Name: Pear
@@ -114,8 +114,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &2855364385489385383
-CircleCollider2D:
+--- !u!60 &7879495697436965325
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -146,9 +146,44 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.2524786, y: -0.16831875}
-  serializedVersion: 2
-  m_Radius: 2.2750788
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.1, y: 5.05}
+    newSize: {x: 5.1, y: 5.05}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2.4080007, y: 2.446835}
+      - {x: 1.9680452, y: 2.5636797}
+      - {x: 1.4888086, y: 2.5681493}
+      - {x: 1.2366638, y: 2.2570062}
+      - {x: 0.5365305, y: 2.2906132}
+      - {x: -0.72021294, y: 1.7109942}
+      - {x: -1.5293382, y: 1.5713373}
+      - {x: -2.0647373, y: 1.2370983}
+      - {x: -2.55, y: 0.3985067}
+      - {x: -2.592639, y: -0.91676444}
+      - {x: -2.4383361, y: -1.3580016}
+      - {x: -2.1503458, y: -1.8427371}
+      - {x: -1.875, y: -2.14367}
+      - {x: -1.3441681, y: -2.4915009}
+      - {x: -0.68505764, y: -2.5565453}
+      - {x: 0.112771034, y: -2.5350718}
+      - {x: 0.5160031, y: -2.4133358}
+      - {x: 0.8809233, y: -2.207635}
+      - {x: 1.1198931, y: -1.9833405}
+      - {x: 1.4570061, y: -1.575}
+      - {x: 1.684392, y: -0.8225569}
+      - {x: 2.123475, y: 0.06426233}
+      - {x: 2.1486273, y: 1.2662146}
+      - {x: 2.5834987, y: 1.7438114}
+      - {x: 2.55, y: 2.3500001}
+  m_UseDelaunayMesh: 0
 --- !u!114 &6649293404433624359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,3 +197,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextFruit: {fileID: 7344196777152887169, guid: 5092e98ec132a1b47bc6b48938d8ce40, type: 3}
+  score: {fileID: 0}

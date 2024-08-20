@@ -146,9 +146,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.02728951, y: -0.014694393}
+  m_Offset: {x: -0.016322196, y: -0.013040185}
   serializedVersion: 2
-  m_Radius: 0.5965632
+  m_Radius: 0.5768607
 --- !u!114 &8788574943983473617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,3 +162,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextFruit: {fileID: 7127371196072002496, guid: 5a308086bb5fd1245944fd67e73e82de, type: 3}
+  score: {fileID: 0}
