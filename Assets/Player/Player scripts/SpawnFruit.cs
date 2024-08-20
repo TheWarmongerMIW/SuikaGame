@@ -34,17 +34,25 @@ public class SpawnFruit : MonoBehaviour
         fruitBody.bodyType = RigidbodyType2D.Kinematic;
         fruitCollider.enabled = false;
 
-        lastSpawnTime = Time.time;
+        //lastSpawnTime = Time.time;
+        isSelected = true;
         isDone = false;
     }
     void Update()
     {
-        if (Time.time > spawnRate + lastSpawnTime && !isSelected) FruitSpawner();
-        if (Time.time > spawnRate + lastSpawnTime && !isNextFruitSelected) NextFruit(); 
+        if (Time.time > lastSpawnTime + spawnRate && !isSelected)
+        {
+            FruitSpawner();
+        }
+        if (Time.time > lastSpawnTime + spawnRate && !isNextFruitSelected)
+        {
+            NextFruit();
+        }
+
 
         if (Input.GetKeyDown(spawnKey))
-        {
-            if (Time.time > spawnRate + lastSpawnTime)
+        { 
+            if (isSelected)
             {
                 fruitBody.bodyType = RigidbodyType2D.Dynamic;
                 fruitCollider.enabled = true;
@@ -52,7 +60,7 @@ public class SpawnFruit : MonoBehaviour
                 isSelected = false;
                 isNextFruitSelected = false;
                 isDone = true;
-            }
+            }                                                                    
         }
     }
     public void FruitSpawner()
