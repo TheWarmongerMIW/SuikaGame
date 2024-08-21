@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class MovementBoundary : MonoBehaviour
 {
+    [SerializeField] private Transform parentTransform;
     // Start is called before the first frame update
     void Start()
     {
-        
+        parentTransform = transform.parent;
     }
-
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x >= 10) transform.position = new Vector2(10, transform.position.y);
-        if (transform.position.x <= -4) transform.position = new Vector2(-4, transform.position.y);
+        //Transform transformParent = transform.parent; 
+
+        if (parentTransform.position.x >= 10) parentTransform.position = new Vector2(10, parentTransform.position.y);
+        if (parentTransform.position.x <= -4) parentTransform.position = new Vector2(-4, parentTransform.position.y);
     }
 }
