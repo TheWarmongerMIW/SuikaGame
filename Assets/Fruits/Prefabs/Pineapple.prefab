@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 3138253997176346047}
   - component: {fileID: 6081963686002459841}
   - component: {fileID: 8126699083004477128}
-  - component: {fileID: 5911060074717673062}
   - component: {fileID: 6376473905116790181}
-  m_Layer: 0
+  - component: {fileID: 5911060074717673062}
+  - component: {fileID: -3651361850872637626}
+  m_Layer: 6
   m_Name: Pineapple
   m_TagString: Pineapple
   m_Icon: {fileID: 0}
@@ -114,20 +115,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5911060074717673062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8459921401697688855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aba55f6508e030741a03b749ab1064a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextFruit: {fileID: 7475067173741372970, guid: b95a795123eef844c889179a2f85f56f, type: 3}
-  score: {fileID: 0}
 --- !u!60 &6376473905116790181
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -201,3 +188,32 @@ PolygonCollider2D:
       - {x: 2.7419748, y: -4.7092037}
       - {x: 3.3524387, y: -3.9557924}
   m_UseDelaunayMesh: 0
+--- !u!114 &5911060074717673062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8459921401697688855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aba55f6508e030741a03b749ab1064a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 0}
+  isLocked: 0
+  collidedFruit: {fileID: 8459921401697688855}
+  nextFruit: {fileID: 7475067173741372970, guid: b95a795123eef844c889179a2f85f56f, type: 3}
+--- !u!114 &-3651361850872637626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8459921401697688855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59ef2a0630ecb3c4189d6e62a76d9529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 0

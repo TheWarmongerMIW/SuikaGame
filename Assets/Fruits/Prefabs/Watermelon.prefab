@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 3056188489148382755}
   - component: {fileID: 4495437329217937999}
   - component: {fileID: 4216673940576510286}
-  m_Layer: 0
+  - component: {fileID: 8910196922832132634}
+  m_Layer: 6
   m_Name: Watermelon
   m_TagString: Watermelon
   m_Icon: {fileID: 0}
@@ -161,4 +162,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba55f6508e030741a03b749ab1064a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: {fileID: 0}
+  isLocked: 0
+  collidedFruit: {fileID: 7475067173741372970}
   nextFruit: {fileID: 3538861489780133926, guid: 4f66023b6b355dc49802cb75d0208652, type: 3}
+--- !u!114 &8910196922832132634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7475067173741372970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59ef2a0630ecb3c4189d6e62a76d9529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 0

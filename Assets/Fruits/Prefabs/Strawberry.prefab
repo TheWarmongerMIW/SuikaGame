@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 6761124309803168484}
   - component: {fileID: 6239727113355238798}
   - component: {fileID: 8788574943983473617}
-  m_Layer: 0
+  - component: {fileID: -777334060727794191}
+  m_Layer: 6
   m_Name: Strawberry
   m_TagString: Strawberry
   m_Icon: {fileID: 0}
@@ -161,5 +162,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba55f6508e030741a03b749ab1064a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextFruit: {fileID: 7127371196072002496, guid: 5a308086bb5fd1245944fd67e73e82de, type: 3}
   score: {fileID: 0}
+  isLocked: 0
+  collidedFruit: {fileID: 4518127050049936894}
+  nextFruit: {fileID: 7127371196072002496, guid: 5a308086bb5fd1245944fd67e73e82de, type: 3}
+--- !u!114 &-777334060727794191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4518127050049936894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59ef2a0630ecb3c4189d6e62a76d9529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 0

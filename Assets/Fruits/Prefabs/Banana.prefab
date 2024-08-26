@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 1229938281827649754}
   - component: {fileID: 8365512083235862955}
   - component: {fileID: 2664151403757170213}
-  m_Layer: 0
+  - component: {fileID: -6616074372841056542}
+  m_Layer: 6
   m_Name: Banana
   m_TagString: Banana
   m_Icon: {fileID: 0}
@@ -126,8 +127,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba55f6508e030741a03b749ab1064a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextFruit: {fileID: 8459921401697688855, guid: 9e7223125347d8b40a5f904a1e62a4d6, type: 3}
   score: {fileID: 0}
+  isLocked: 0
+  collidedFruit: {fileID: 7344196777152887169}
+  nextFruit: {fileID: 8459921401697688855, guid: 9e7223125347d8b40a5f904a1e62a4d6, type: 3}
 --- !u!60 &2664151403757170213
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -214,3 +217,16 @@ PolygonCollider2D:
       - {x: 3.441311, y: 0.052112594}
       - {x: 3.495968, y: 0.39865395}
   m_UseDelaunayMesh: 0
+--- !u!114 &-6616074372841056542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7344196777152887169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59ef2a0630ecb3c4189d6e62a76d9529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 0

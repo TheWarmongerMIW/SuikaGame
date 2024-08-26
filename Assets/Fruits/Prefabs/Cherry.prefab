@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 7434898623587607911}
   - component: {fileID: 8244129136160876536}
   - component: {fileID: 3814507287170437133}
-  m_Layer: 0
+  - component: {fileID: 1046196329855777815}
+  m_Layer: 6
   m_Name: Cherry
   m_TagString: Cherry
   m_Icon: {fileID: 0}
@@ -161,5 +162,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba55f6508e030741a03b749ab1064a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextFruit: {fileID: 4518127050049936894, guid: 99795e5ac30efe0428ec0679dd03ae6c, type: 3}
   score: {fileID: 0}
+  isLocked: 0
+  collidedFruit: {fileID: 229659203329071158}
+  nextFruit: {fileID: 4518127050049936894, guid: 99795e5ac30efe0428ec0679dd03ae6c, type: 3}
+--- !u!114 &1046196329855777815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229659203329071158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59ef2a0630ecb3c4189d6e62a76d9529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 0

@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 8616188999631492027}
   - component: {fileID: 7879495697436965325}
   - component: {fileID: 6649293404433624359}
-  m_Layer: 0
+  - component: {fileID: -7305726438645740456}
+  m_Layer: 6
   m_Name: Pear
   m_TagString: Pear
   m_Icon: {fileID: 0}
@@ -196,5 +197,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba55f6508e030741a03b749ab1064a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextFruit: {fileID: 7344196777152887169, guid: 5092e98ec132a1b47bc6b48938d8ce40, type: 3}
   score: {fileID: 0}
+  isLocked: 0
+  collidedFruit: {fileID: 7806644423804130711}
+  nextFruit: {fileID: 7344196777152887169, guid: 5092e98ec132a1b47bc6b48938d8ce40, type: 3}
+--- !u!114 &-7305726438645740456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7806644423804130711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59ef2a0630ecb3c4189d6e62a76d9529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 0

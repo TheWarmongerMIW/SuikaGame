@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 6125194776538271877}
   - component: {fileID: 2508120660016827898}
   - component: {fileID: 9169919326551232030}
-  m_Layer: 0
+  - component: {fileID: -4507288982039412502}
+  m_Layer: 6
   m_Name: Apple
   m_TagString: Apple
   m_Icon: {fileID: 0}
@@ -161,5 +162,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba55f6508e030741a03b749ab1064a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextFruit: {fileID: 7806644423804130711, guid: 8b7bb61e17cf5ed478ac0e3f5d928b6b, type: 3}
   score: {fileID: 0}
+  isLocked: 0
+  collidedFruit: {fileID: 6597037470440752255}
+  nextFruit: {fileID: 7806644423804130711, guid: 8b7bb61e17cf5ed478ac0e3f5d928b6b, type: 3}
+--- !u!114 &-4507288982039412502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6597037470440752255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59ef2a0630ecb3c4189d6e62a76d9529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 0

@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 3608950616645674639}
   - component: {fileID: 3628235012478889537}
   - component: {fileID: 6264744679641919383}
-  m_Layer: 0
+  - component: {fileID: -7980289351778150817}
+  m_Layer: 6
   m_Name: Grape
   m_TagString: Grape
   m_Icon: {fileID: 0}
@@ -161,5 +162,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba55f6508e030741a03b749ab1064a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextFruit: {fileID: 8045322990915084118, guid: 47cb8108e46606b4a872b70f30b22e3e, type: 3}
   score: {fileID: 0}
+  isLocked: 0
+  collidedFruit: {fileID: 7127371196072002496}
+  nextFruit: {fileID: 8045322990915084118, guid: 47cb8108e46606b4a872b70f30b22e3e, type: 3}
+--- !u!114 &-7980289351778150817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7127371196072002496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59ef2a0630ecb3c4189d6e62a76d9529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 0

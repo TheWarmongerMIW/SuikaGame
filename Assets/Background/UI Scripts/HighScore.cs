@@ -34,5 +34,6 @@ public class HighScore : MonoBehaviour
     public void ResetHighScore()
     {
         PlayerPrefs.DeleteKey("HighScore");
+
     }
 }

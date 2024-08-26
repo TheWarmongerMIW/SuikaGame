@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnFruit : MonoBehaviour
 {
     [SerializeField] private KeyCode spawnKey = KeyCode.Space;
+    [SerializeField] private KeyCode spawnKey2 = KeyCode.Mouse0;
     [SerializeField] private float spawnRate;
     [SerializeField] private float lastSpawnTime;
     [SerializeField] private List<GameObject> fruits = new List<GameObject>();
@@ -50,7 +51,7 @@ public class SpawnFruit : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(spawnKey))
+        if (Input.GetKeyDown(spawnKey) || Input.GetKeyDown(spawnKey2))
         { 
             if (isSelected)
             {

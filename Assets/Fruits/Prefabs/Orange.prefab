@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 1505977949476091233}
   - component: {fileID: 5643825368772954685}
   - component: {fileID: 7943122950225852518}
-  m_Layer: 0
+  - component: {fileID: -79079239525406573}
+  m_Layer: 6
   m_Name: Orange
   m_TagString: Orange
   m_Icon: {fileID: 0}
@@ -161,4 +162,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba55f6508e030741a03b749ab1064a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: {fileID: 0}
+  isLocked: 0
+  collidedFruit: {fileID: 3139419883663036060}
   nextFruit: {fileID: 6597037470440752255, guid: 124fc18e8f8d2a7419e82ae322382092, type: 3}
+--- !u!114 &-79079239525406573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3139419883663036060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59ef2a0630ecb3c4189d6e62a76d9529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 0
