@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: -1249084499617756818}
   m_Layer: 6
   m_Name: Emtpty Fuit
-  m_TagString: Untagged
+  m_TagString: Fruit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,3 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59ef2a0630ecb3c4189d6e62a76d9529, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLocked: 0
+  ID: Infinity

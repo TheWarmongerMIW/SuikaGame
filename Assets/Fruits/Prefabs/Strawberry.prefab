@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -777334060727794191}
   m_Layer: 6
   m_Name: Strawberry
-  m_TagString: Strawberry
+  m_TagString: Fruit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: {fileID: 0}
   isLocked: 0
-  collidedFruit: {fileID: 4518127050049936894}
+  collidedFruit: {fileID: -777334060727794191}
   nextFruit: {fileID: 7127371196072002496, guid: 5a308086bb5fd1245944fd67e73e82de, type: 3}
 --- !u!114 &-777334060727794191
 MonoBehaviour:
@@ -179,3 +179,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLocked: 0
+  ID: Strawberry

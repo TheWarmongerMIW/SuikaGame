@@ -5,12 +5,12 @@ using UnityEngine;
 public class CollidedFruit : MonoBehaviour
 {
     public bool isLocked = false;
+    public string ID;
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         

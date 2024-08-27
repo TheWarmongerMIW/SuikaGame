@@ -4,17 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Cherry
-  - Strawberry
-  - Grape
-  - Lemon
-  - Orange
-  - Apple
-  - Pear
-  - Banana
-  - Pineapple
-  - Watermelon
   - Boundary
+  - Fruit
+  - New Fruit
   layers:
   - Default
   - TransparentFX
