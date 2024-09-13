@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SpawnFruit : MonoBehaviour
 {
-    [SerializeField] private KeyCode spawnKey = KeyCode.Space;
     [SerializeField] private KeyCode spawnKey2 = KeyCode.Mouse0;
+    [SerializeField] private AudioManager audioManager;
     [SerializeField] private float spawnRate;
     [SerializeField] private float lastSpawnTime;
     [SerializeField] private List<GameObject> fruits = new List<GameObject>();
@@ -15,6 +15,7 @@ public class SpawnFruit : MonoBehaviour
     [SerializeField] private GameObject selectedFruit;
     [SerializeField] private bool isSelected = false;
     [SerializeField] private bool isDone = false;
+    [SerializeField] private bool canPlay = false;
     
     public GameObject nextSelectedFruit;  
     public bool isNextFruitSelected = false;
@@ -38,6 +39,8 @@ public class SpawnFruit : MonoBehaviour
         //lastSpawnTime = Time.time;
         isSelected = true;
         isDone = false;
+
+        audioManager = GameObject.Find("Audio Manager").GetComponent<AudioManager>();   
     }
     void Update()
     {
@@ -51,8 +54,8 @@ public class SpawnFruit : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(spawnKey) || Input.GetKeyDown(spawnKey2))
-        { 
+        if (Input.GetKeyDown(spawnKey2))
+        {
             if (isSelected)
             {
                 fruitBody.bodyType = RigidbodyType2D.Dynamic;
@@ -61,7 +64,13 @@ public class SpawnFruit : MonoBehaviour
                 isSelected = false;
                 isNextFruitSelected = false;
                 isDone = true;
-            }                                                                    
+                canPlay = true;
+            }
+            if (canPlay)
+            {
+                audioManager.pop1.Play();    
+                canPlay = false;    
+            }
         }
     }
     public void FruitSpawner()
